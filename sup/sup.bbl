@@ -1,0 +1,57 @@
+\begin{thebibliography}{10}
+
+\bibitem{Peskin1995}
+M.~E. Peskin and D.~V. Schroeder, {\em {An Introduction to Quantum Field
+  Theory}}.
+\newblock Reading, MA: Perseus Books Publishing, L.L.C., first~ed., 1995.
+
+\bibitem{Lancaster2014}
+T.~Lancaster and S.~J. Blundell, {\em {Quantum Field Theory for the Gifted
+  Amateur}}.
+\newblock New York, NY, United States of America: Oxford University Press,
+  first~ed., 2014.
+
+\bibitem{Bjorken1964}
+J.~D. Bjorken and S.~D. Drell, {\em {Relativistic Quantum Mechanics}}.
+\newblock International series in pure and applied physics, McGraw-Hill, 1964.
+
+\bibitem{Mathematica}
+W.~R. Inc., ``{Mathematica, {V}ersion 12.3}.''
+
+\bibitem{Bethe1930}
+H.~Bethe, ``{Zur Theorie des Durchgangs schneller Korpuskularstrahlen durch
+  Materie},'' {\em Ann. Phys.}, vol.~397, no.~3, pp.~325--400, 1930.
+
+\bibitem{Susi2019}
+T.~Susi, J.~C. Meyer, and J.~Kotakoski, ``{Quantifying transmission electron
+  microscopy irradiation effects using two-dimensional materials},'' {\em Nat.
+  Rev. Phys.}, vol.~1, pp.~397--405, may 2019.
+
+\bibitem{Kretschmer2020}
+S.~Kretschmer, T.~Lehnert, U.~Kaiser, A.~{V. Krasheninnikov}, and A.~V.
+  Krasheninnikov, ``{Formation of defects in two-dimensional MoS$_2$ in
+  transmission electron microscope at electron energies below the knock-on
+  threshold : the role of electronic excitations},'' {\em Nano Lett.}, vol.~20,
+  pp.~2865--2870, mar 2020.
+
+\bibitem{Komsa2012}
+H.~P. Komsa, J.~Kotakoski, S.~Kurasch, O.~Lehtinen, U.~Kaiser, and A.~V.
+  Krasheninnikov, ``{Two-dimensional transition metal dichalcogenides under
+  electron irradiation: Defect production and doping},'' {\em Phys. Rev.
+  Lett.}, vol.~109, pp.~035503--1--5, jul 2012.
+
+\bibitem{Thornton2004}
+S.~T. Thornton and J.~B. Marion, {\em {Classical Dynamics of Particles and
+  Systems}}.
+\newblock Boston, MA: Brooks/Cole, 5th~ed., 2004.
+
+\bibitem{Sakurai2011}
+J.~J. Sakurai and J.~Napolitano, {\em {Modern Quantum Mechanics}}.
+\newblock San Fransisco, CA: Pearson Education, 2nd~ed., 2011.
+
+\bibitem{Yoshimura2018}
+A.~Yoshimura, M.~Lamparski, N.~Kharche, and V.~Meunier, ``{First-principles
+  simulation of local response in transition metal dichalcogenides under
+  electron irradiation},'' {\em Nanoscale}, vol.~10, pp.~2388--2397, jan 2018.
+
+\end{thebibliography}

@@ -1,0 +1,287 @@
+\begin{thebibliography}{10}
+
+\bibitem{Banhart1999}
+F.~Banhart, ``{Irradiation effects in carbon nanostructures},'' {\em Rep. Prog.
+  Phys.}, vol.~62, pp.~1181--1221, jul 1999.
+
+\bibitem{Egerton2013}
+R.~F. Egerton, ``{Ultramicroscopy Control of radiation damage in the TEM},''
+  {\em Ultramicroscopy}, vol.~127, pp.~100--108, apr 2013.
+
+\bibitem{Zhao2017}
+X.~Zhao, J.~Kotakoski, J.~C. Meyer, E.~Sutter, P.~Sutter, A.~V. Krasheninnikov,
+  U.~Kaiser, and W.~Zhou, ``{Engineering and modifying two-dimensional
+  materials by electron beams},'' {\em MRS Bull.}, vol.~42, pp.~667--676, sep
+  2017.
+
+\bibitem{Susi2019}
+T.~Susi, J.~C. Meyer, and J.~Kotakoski, ``{Quantifying transmission electron
+  microscopy irradiation effects using two-dimensional materials},'' {\em Nat.
+  Rev. Phys.}, vol.~1, pp.~397--405, may 2019.
+
+\bibitem{Meyer2012}
+J.~C. Meyer, F.~Eder, S.~Kurasch, V.~Skakalova, J.~Kotakoski, H.~J. Park,
+  S.~Roth, A.~Chuvilin, S.~Eyhusen, G.~Benner, A.~V. Krasheninnikov, and
+  U.~Kaiser, ``{Accurate measurement of electron beam induced displacement
+  cross sections for single-layer graphene},'' {\em Phys. Rev. Lett.},
+  vol.~108, pp.~196102--196107, may 2012.
+
+\bibitem{Susi2016}
+T.~Susi, C.~Hofer, G.~Argentero, G.~T. Leuthner, T.~J. Pennycook, C.~Mangler,
+  J.~C. Meyer, and J.~Kotakoski, ``{Isotope analysis in the transmission
+  electron microscope},'' {\em Nat. Commun.}, vol.~7, p.~13040, 2016.
+
+\bibitem{Yoshimura2018}
+A.~Yoshimura, M.~Lamparski, N.~Kharche, and V.~Meunier, ``{First-principles
+  simulation of local response in transition metal dichalcogenides under
+  electron irradiation},'' {\em Nanoscale}, vol.~10, pp.~2388--2397, jan 2018.
+
+\bibitem{Kotakoski2010}
+J.~Kotakoski, C.~H. Jin, O.~Lehtinen, K.~Suenaga, and A.~V. Krasheninnikov,
+  ``{Electron knock-on damage in hexagonal boron nitride monolayers},'' {\em
+  Phys. Rev. B}, vol.~82, p.~113404, sep 2010.
+
+\bibitem{Cretu2015}
+O.~Cretu, Y.~C. Lin, and K.~Suenaga, ``{Inelastic electron irradiation damage
+  in hexagonal boron nitride},'' {\em Micron}, vol.~72, pp.~21--27, may 2015.
+
+\bibitem{Lin2015}
+Y.-C. Lin, T.~Bj{\"{o}}rkman, H.-P. Komsa, P.-Y. Teng, C.-H. Yeh, F.-S. Huang,
+  K.-H. Lin, J.~Jadczak, Y.-S. Huang, P.-W. Chiu, A.~V. Krasheninnikov, and
+  K.~Suenaga, ``{Three-fold rotational defects in two-dimensional transition
+  metal dichalcogenides.},'' {\em Nat. Commun.}, vol.~6, pp.~6736--6741, oct
+  2015.
+
+\bibitem{Lehnert2017}
+T.~Lehnert, O.~Lehtinen, G.~A. Siller, U.~Kaiser, G.~Algara-Siller, and
+  U.~Kaiser, ``{Electron radiation damage mechanisms in 2D MoSe$_2$},'' {\em
+  Appl. Phys. Lett.}, vol.~110, p.~033106, jan 2017.
+
+\bibitem{Kretschmer2020}
+S.~Kretschmer, T.~Lehnert, U.~Kaiser, A.~{V. Krasheninnikov}, and A.~V.
+  Krasheninnikov, ``{Formation of defects in two-dimensional MoS$_2$ in
+  transmission electron microscope at electron energies below the knock-on
+  threshold : the role of electronic excitations},'' {\em Nano Lett.}, vol.~20,
+  pp.~2865--2870, mar 2020.
+
+\bibitem{Hohenberg1964}
+P.~Hohenberg and W.~Kohn, ``{Inhomogeneous electron gas},'' {\em Phys. Rev.},
+  vol.~136, pp.~B864--871, nov 1964.
+
+\bibitem{Kohn1965}
+W.~Kohn and L.~J. Sham, ``{Self-consistent equations including exchange and
+  correlation effects},'' {\em Phys. Rev.}, vol.~140, pp.~A1133--1138, nov
+  1965.
+
+\bibitem{Kresse1996a}
+G.~Kresse and J.~Furthm{\"{u}}ller, ``{Efficient iterative schemes for ab
+  initio total-energy calculations using a plane-wave basis set},'' {\em Phys.
+  Rev. B}, vol.~54, pp.~11169--11186, oct 1996.
+
+\bibitem{Lourenco-Martins2021}
+H.~Louren{\c{c}}o-Martins, A.~Lubk, and M.~Kociak, ``{Bridging nano-optics and
+  condensed matter formalisms in a unified description of inelastic scattering
+  of relativistic electron beams},'' {\em SciPost Phys.}, vol.~10, no.~2,
+  p.~31, 2021.
+
+\bibitem{Peskin1995}
+M.~E. Peskin and D.~V. Schroeder, {\em {An Introduction to Quantum Field
+  Theory}}.
+\newblock Reading, MA: Perseus Books Publishing, L.L.C., first~ed., 1995.
+
+\bibitem{Lancaster2014}
+T.~Lancaster and S.~J. Blundell, {\em {Quantum Field Theory for the Gifted
+  Amateur}}.
+\newblock New York, NY, United States of America: Oxford University Press,
+  first~ed., 2014.
+
+\bibitem{Mott1929}
+N.~F. Mott, ``{The Scattering of Fast Electrons by Atomic Nuclei},'' {\em Proc.
+  R. Soc. A}, vol.~124, pp.~425--442, jun 1929.
+
+\bibitem{McKinley1948}
+W.~A. McKinley and H.~Feshbach, ``{The coulomb scattering of relativistic
+  electrons by nuclei},'' {\em Phys. Rev.}, vol.~74, pp.~1759--1763, dec 1948.
+
+\bibitem{Oen1973}
+O.~S. Oen, ``{Cross sections for atomic displacements in solids by fast
+  electrons},'' tech. rep., Oak Ridge National Laboratory, Oak Ridge,
+  Tennessee, aug 1973.
+
+\bibitem{Egerton2010}
+R.~F. Egerton, R.~McLeod, F.~Wang, and M.~Malac, ``{Basic questions related to
+  electron-induced sputtering in the TEM},'' {\em Ultramicroscopy}, vol.~110,
+  pp.~991--997, jul 2010.
+
+\bibitem{Moller1932}
+C.~M{\o}ller, ``{Zur Theorie des Durchgangs schneller Elektronen durch
+  Materie},'' {\em Ann. Phys.}, vol.~406, no.~5, pp.~531--585, 1932.
+
+\bibitem{Kragh1992}
+H.~Kragh, ``{Relativistic collisions: The work of Christian M{\o}ller in the
+  early 1930s},'' {\em Arch. Hist. Exact Sci.}, vol.~43, no.~4, pp.~299--328,
+  1992.
+
+\bibitem{Roqu1992}
+X.~Roqu{\'e}, ``{M{\o}ller scattering: a neglected application of early quantum
+  electrodynamics},'' {\em Arch. Hist. Exact Sci.}, vol.~44, pp.~197--264, sep
+  1992.
+
+\bibitem{Bethe1930}
+H.~Bethe, ``{Zur Theorie des Durchgangs schneller Korpuskularstrahlen durch
+  Materie},'' {\em Ann. Phys.}, vol.~397, no.~3, pp.~325--400, 1930.
+
+\bibitem{Inokuti1967}
+M.~Inokuti, Y.-K. Kim, and R.~L. Platzman, ``{Total Cross Sections for
+  Inelastic Scattering of Charged Particles by Atoms and Molecules. I. A Sum
+  Rule for the Bethe Cross Sections and Its Application to the Helium Atom},''
+  {\em Phys. Rev.}, vol.~164, pp.~55--61, dec 1967.
+
+\bibitem{Gusakova2017}
+J.~Gusakova, X.~Wang, L.~L. Shiau, A.~Krivosheeva, V.~Shaposhnikov,
+  V.~Borisenko, V.~Gusakov, and B.~K. Tay, ``{Electronic Properties of Bulk and
+  Monolayer TMDs: Theoretical Study Within DFT Framework (GVJ-2e Method)},''
+  {\em Phys. status solidi}, vol.~214, no.~12, p.~1700218, 2017.
+
+\bibitem{Elias2019}
+C.~Elias, P.~Valvin, T.~Pelini, A.~Summerfield, C.~J. Mellor, T.~S. Cheng,
+  L.~Eaves, C.~T. Foxon, P.~H. Beton, S.~V. Novikov, B.~Gil, and G.~Cassabois,
+  ``{Direct band-gap crossover in epitaxial monolayer boron nitride},'' {\em
+  Nat. Commun.}, vol.~10, no.~1, p.~2639, 2019.
+
+\bibitem{Lingerfelt2019a}
+D.~B. Lingerfelt, P.~Ganesh, J.~Jakowski, and B.~G. Sumpter, ``{Electronically
+  Nonadiabatic Structural Transformations Promoted by Electron Beams},'' {\em
+  Adv. Funct. Mater.}, vol.~1901901, p.~1901901, 2019.
+
+\bibitem{Li2005}
+X.~Li, J.~C. Tully, H.~B. Schlegel, and M.~J. Frisch, ``{Ab initio Ehrenfest
+  dynamics},'' {\em J. Chem. Phys.}, vol.~123, no.~8, p.~84106, 2005.
+
+\bibitem{Komsa2012}
+H.~P. Komsa, J.~Kotakoski, S.~Kurasch, O.~Lehtinen, U.~Kaiser, and A.~V.
+  Krasheninnikov, ``{Two-dimensional transition metal dichalcogenides under
+  electron irradiation: Defect production and doping},'' {\em Phys. Rev.
+  Lett.}, vol.~109, pp.~035503--1--5, jul 2012.
+
+\bibitem{Jin2009}
+C.~Jin, F.~Lin, K.~Suenaga, and S.~Iijima, ``{Fabrication of a freestanding
+  boron nitride single layer and Its defect assignments},'' {\em Phys. Rev.
+  Lett.}, vol.~102, no.~19, p.~195505, 2009.
+
+\bibitem{Meyer2009}
+J.~C. Meyer, A.~Chuvilin, G.~Algara-Siller, J.~Biskupek, and U.~Kaiser,
+  ``{Selective sputtering and atomic resolution imaging of atomically thin
+  boron nitride membranes},'' {\em Nano Lett.}, vol.~9, no.~7, pp.~2683--2689,
+  2009.
+
+\bibitem{Dogan2020}
+M.~Dogan, S.~M. Gilbert, T.~Pham, B.~Shevitski, P.~Ercius, S.~Aloni, A.~Zettl,
+  and M.~L. Cohen, ``{Electron beam-induced nanopores in Bernal-stacked
+  hexagonal boron nitride},'' {\em Appl. Phys. Lett.}, vol.~117, no.~2,
+  pp.~9--13, 2020.
+
+\bibitem{Li2016b}
+J.~Li, X.~K. Cao, T.~B. Hoffman, J.~H. Edgar, J.~Y. Lin, and H.~X. Jiang,
+  ``{Nature of exciton transitions in hexagonal boron nitride},'' {\em Appl.
+  Phys. Lett.}, vol.~108, pp.~122101--1--4, mar 2016.
+
+\bibitem{Korn2011}
+T.~Korn, S.~Heydrich, M.~Hirmer, J.~Schmutzler, C.~Sch{\"{u}}ller, and
+  C.~Schller, ``{Low-temperature photocarrier dynamics in monolayer MoS$_2$},''
+  {\em Appl. Phys. Lett.}, vol.~99, no.~10, p.~102109, 2011.
+
+\bibitem{Lagarde2014}
+D.~Lagarde, L.~Bouet, X.~Marie, C.~R. Zhu, B.~L. Liu, T.~Amand, P.~H. Tan, and
+  B.~Urbaszek, ``{Carrier and Polarization Dynamics in Monolayer MoS$_2$},''
+  {\em Phys. Rev. Lett.}, vol.~112, p.~47401, jan 2014.
+
+\bibitem{Palummo2015a}
+M.~Palummo, M.~Bernardi, and J.~C. Grossman, ``{Exciton Radiative Lifetimes in
+  Two-Dimensional Transition Metal Dichalcogenides},'' {\em Nano Lett.},
+  vol.~15, pp.~2794--2800, may 2015.
+
+\bibitem{Kozawa2014}
+D.~Kozawa, R.~Kumar, A.~Carvalho, K.~{Kumar Amara}, W.~Zhao, S.~Wang, M.~Toh,
+  R.~M. Ribeiro, A.~H. {Castro Neto}, K.~Matsuda, and G.~Eda, ``{Photocarrier
+  relaxation pathway in two-dimensional semiconducting transition metal
+  dichalcogenides},'' {\em Nat. Commun.}, vol.~5, no.~1, p.~4543, 2014.
+
+\bibitem{Nie2015}
+Z.~Nie, R.~Long, J.~{S. Teguh}, C.-C. Huang, D.~{W. Hewak}, E.~{K. L. Yeow},
+  Z.~Shen, O.~{V. Prezhdo}, and Z.-H. Loh, ``{Ultrafast Electron and Hole
+  Relaxation Pathways in Few-Layer MoS$_2$},'' {\em J. Phys. Chem. C},
+  vol.~119, pp.~20698--20708, aug 2015.
+
+\bibitem{Shi2013b}
+H.~Shi, R.~Yan, S.~Bertolazzi, J.~Brivio, B.~Gao, A.~Kis, D.~Jena, H.~G. Xing,
+  and L.~Huang, ``{Exciton dynamics in suspended monolayer and few-layer
+  MoS$_2$ 2D crystals},'' {\em ACS Nano}, vol.~7, pp.~1072--1080, jan 2013.
+
+\bibitem{Blochl1994}
+P.~E. Bl{\"{o}}chl, ``{Projector augmented-wave method},'' {\em Phys. Rev. B},
+  vol.~50, pp.~17953--17979, dec 1994.
+
+\bibitem{Shishkin2006a}
+M.~Shishkin and G.~Kresse, ``{Implementation and performance of the
+  frequency-dependent GW method within the PAW framework},'' {\em Phys. Rev.
+  B}, vol.~74, p.~035101, jul 2006.
+
+\bibitem{Gajdos2006}
+M.~Gajdo{\v{s}}, K.~Hummer, G.~Kresse, J.~Furthm{\"{u}}ller, and F.~Bechstedt,
+  ``{Linear optical properties in the projector-augmented wave methodology},''
+  {\em Phys. Rev. B}, vol.~73, p.~045112, jan 2006.
+
+\bibitem{Paier2005}
+J.~Paier, R.~Hirschl, M.~Marsman, and G.~Kresse, ``{The
+  Perdew–Burke–Ernzerhof exchange-correlation functional applied to the
+  G2-1 test set using a plane-wave basis set},'' {\em J. Chem. Phys.},
+  vol.~122, no.~23, p.~234102, 2005.
+
+\bibitem{Kaduk2012}
+B.~Kaduk, T.~Kowalczyk, and T.~{Van Voorhis}, ``{Constrained Density Functional
+  Theory},'' {\em Chem. Rev.}, vol.~112, pp.~321--370, jan 2012.
+
+\bibitem{Kresse1996}
+G.~Kresse and J.~Furthm{\"{u}}ller, ``{Efficiency of ab-initio total energy
+  calculations for metals and semiconductors using a plane-wave basis set},''
+  {\em Comput. Mater. Sci.}, vol.~6, pp.~15--50, jul 1996.
+
+\bibitem{Perdew1996}
+J.~P. Perdew, K.~Burke, and M.~Ernzerhof, ``{Generalized Gradient Approximation
+  Made Simple},'' {\em Phys. Rev. Lett.}, vol.~77, pp.~3865--3868, oct 1996.
+
+\bibitem{Klimes2010}
+J.~Klime{\v{s}}, D.~Bowler, and A.~Michaelides, ``{Chemical accuracy for the
+  van der Waals density functional},'' {\em J. Phys. Condens. Matter}, vol.~22,
+  no.~2, pp.~022201--022205, 2009.
+
+\bibitem{Klimes2011}
+J.~Klime{\v{s}}, D.~R. Bowler, and A.~Michaelides, ``{Van der Waals density
+  functionals applied to solids},'' {\em Phys. Rev. B}, vol.~83,
+  pp.~195131--1--13, may 2011.
+
+\bibitem{Monkhorst1976}
+H.~Monkhorst and J.~Pack, ``{Special points for Brillouin zone integrations},''
+  {\em Phys. Rev. B}, vol.~13, pp.~5188--5192, jun 1976.
+
+\bibitem{Hamann2013}
+D.~R. Hamann, ``{Optimized norm-conserving Vanderbilt pseudopotentials},'' {\em
+  Phys. Rev. B}, vol.~88, p.~85117, aug 2013.
+
+\bibitem{Schlipf2015}
+M.~Schlipf and F.~Gygi, ``{Optimization algorithm for the generation of ONCV
+  pseudopotentials},'' {\em Comput. Phys. Commun.}, vol.~196, pp.~36--44, 2015.
+
+\bibitem{Giannozzi2009}
+P.~Giannozzi, S.~Baroni, N.~Bonini, M.~Calandra, R.~Car, C.~Cavazzoni,
+  D.~Ceresoli, G.~L. Chiarotti, M.~Cococcioni, I.~Dabo, A.~D. Corso,
+  S.~de~Gironcoli, S.~Fabris, G.~Fratesi, R.~Gebauer, U.~Gerstmann,
+  C.~Gougoussis, A.~Kokalj, M.~Lazzeri, L.~Martin-Samos, N.~Marzari, F.~Mauri,
+  R.~Mazzarello, S.~Paolini, A.~Pasquarello, L.~Paulatto, C.~Sbraccia,
+  S.~Scandolo, G.~Sclauzero, A.~P. Seitsonen, A.~Smogunov, P.~Umari, and R.~M.
+  Wentzcovitch, ``{QUANTUM ESPRESSO: a modular and open-source software project
+  for quantum simulations of materials},'' {\em J. Phys. Condens. Matter},
+  vol.~21, p.~395502, sep 2009.
+
+\end{thebibliography}

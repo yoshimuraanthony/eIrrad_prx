@@ -1,0 +1,1 @@
+/mnt/c/texlive/texmf-local/revtex-tds/tex/latex/revtex/revtex4-2.cls
