@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.28)  29 NOV 2021 10:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.28)  29 NOV 2021 16:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1595,19 +1595,19 @@ Package xr Info: IMPORTING LABELS FROM main.aux on input line 18.
  (./sup.aux)
 \openout1 = `sup.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
-LaTeX Font Info:    ... okay on input line 63.
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 63.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 65.
+LaTeX Font Info:    ... okay on input line 65.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 65.
 
 (/collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/tex/latex/lm
 /ot1lmr.fd
@@ -1717,20 +1717,20 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 65.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 67.
 
 (/collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/tex/latex/lm
 /omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 65.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 67.
 
 
 (/collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/tex/latex/lm
 /omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 65.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 67.
 
 
 (/collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/tex/latex/lm
@@ -1738,21 +1738,21 @@ LaTeX Font Info:    Try loading font information for OMX+lmex on input line 65.
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 65.
+(Font)              <12> on input line 67.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 65.
+(Font)              <8> on input line 67.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 65.
+(Font)              <6> on input line 67.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 65.
+(Font)              <9> on input line 67.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 65.
+(Font)              <5> on input line 67.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 68.
+(Font)              <14.4> on input line 70.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 68.
+(Font)              <10> on input line 70.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 68.
+(Font)              <7> on input line 70.
  [1
 
 {/collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-var/fonts/map/pdf
@@ -1760,39 +1760,39 @@ tex/updmap/pdftex.map}] [2] [3] [4]
 <figS1.pdf, id=33, 1626.075pt x 542.025pt>
 File: figS1.pdf Graphic file (type pdf)
  <use figS1.pdf>
-Package pdftex.def Info: figS1.pdf used on input line 355.
+Package pdftex.def Info: figS1.pdf used on input line 357.
 (pdftex.def)             Requested size: 383.03014pt x 127.67363pt.
  [5 <./figS1.pdf>]
 <figS2.pdf, id=289, 433.62pt x 361.35pt>
 File: figS2.pdf Graphic file (type pdf)
  <use figS2.pdf>
-Package pdftex.def Info: figS2.pdf used on input line 377.
+Package pdftex.def Info: figS2.pdf used on input line 379.
 (pdftex.def)             Requested size: 229.82042pt x 191.5201pt.
  [6 <./figS2.pdf>]
 <figS3.pdf, id=332, 1626.075pt x 715.17188pt>
 File: figS3.pdf Graphic file (type pdf)
  <use figS3.pdf>
-Package pdftex.def Info: figS3.pdf used on input line 399.
+Package pdftex.def Info: figS3.pdf used on input line 401.
 (pdftex.def)             Requested size: 383.03014pt x 168.45827pt.
 
 <figS4.pdf, id=333, 1626.075pt x 978.65625pt>
 File: figS4.pdf Graphic file (type pdf)
  <use figS4.pdf>
-Package pdftex.def Info: figS4.pdf used on input line 473.
+Package pdftex.def Info: figS4.pdf used on input line 475.
 (pdftex.def)             Requested size: 383.03014pt x 230.52184pt.
  [7 <./figS3.pdf>] [8 <./figS4.pdf>] <figS5.pdf, id=1312, 433.62pt x 361.35pt>
 File: figS5.pdf Graphic file (type pdf)
  <use figS5.pdf>
-Package pdftex.def Info: figS5.pdf used on input line 497.
+Package pdftex.def Info: figS5.pdf used on input line 499.
 (pdftex.def)             Requested size: 229.82042pt x 191.5201pt.
 
 [9 <./figS5.pdf>] (./sup.bbl) [10] (./sup.aux) ) 
 Here is how much of TeX's memory you used:
- 11716 strings out of 493013
- 209870 string characters out of 6119099
- 258296 words of memory out of 5000000
+ 11715 strings out of 493013
+ 209866 string characters out of 6119099
+ 259314 words of memory out of 5000000
  15134 multiletter control sequences out of 15000+600000
- 63000 words of font info for 48 fonts, out of 8000000 for 9000
+ 62985 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  39i,11n,38p,10402b,277s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/collab/usr/global/tools/texli
@@ -1825,7 +1825,7 @@ s/texlive/toss_3_x86_64_ib/2016/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></c
 ollab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/fonts/type1/pub
 lic/lm/lmsy5.pfb></collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-
 dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on sup.pdf (10 pages, 534394 bytes).
+Output written on sup.pdf (10 pages, 534654 bytes).
 PDF statistics:
  1422 PDF objects out of 1440 (max. 8388607)
  909 compressed objects within 10 object streams

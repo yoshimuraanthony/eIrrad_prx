@@ -18,7 +18,7 @@
 \externaldocument{main}
 
 \makeatletter
-\patchcmd{\@maketitle}{\LARGE \@title}{\fontsize{16}{19.2}\selectfont\@title}{}{}
+\patchcmd{\@maketitle}{\LARGE \@title}{\fontsize{13.1}{19.2}\selectfont\@title}{}{}
 \makeatother
 
 \renewcommand\Authfont{\fontsize{12}{14.4}\selectfont}
@@ -35,8 +35,10 @@
 
 \title{\textbf{
     Supplemental Material: \\
-    QED theory of electron beam-induced \\ excitation rates and
-    sputtering cross-sections in 2D crystals
+    QED theory of electron beam-induced electronic excitation
+    and its effect on sputtering cross-section in 2D crystals
+%     QED theory of electron beam-induced \\ excitation rates and
+%     sputtering cross-sections in 2D crystals
 }} 
 \author[1,2*]{Anthony Yoshimura} 
 \author[2]{Michael Lamparski} 
@@ -545,8 +547,9 @@ $E_\text{min}$ yields
   \label{eq:Emin}
 \end{equation}
 %
-Using the Rutherford cross-section instead of the McKinley-Feshbach cross-
-section should be accurate for small beam energies for which $\beta\ll 1$.
+Using the Rutherford cross-section instead of the McKinley-Feshbach
+cross-section should be accurate for small beam energies for which $\beta\ll
+1$.
 This makes it well-suited for finding $E_\text{min}$, since
 $E_d(n_f)<E_\text{min}$ only for large $n_f$, and large $n_i$ (and thus $n_f$)
 are much more likely for small beam energies (figure \ref{fig:Pi}).

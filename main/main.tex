@@ -18,7 +18,8 @@
 % \usepackage[compat=1.1.0]{tikz-feynman}
 
 \makeatletter
-\patchcmd{\@maketitle}{\LARGE \@title}{\fontsize{16}{19.2}\selectfont\@title}{}{}
+% \patchcmd{\@maketitle}{\LARGE \@title}{\fontsize{16}{19.2}\selectfont\@title}{}{}
+\patchcmd{\@maketitle}{\LARGE \@title}{\fontsize{13.1}{19.2}\selectfont\@title}{}{}
 \makeatother
 
 \renewcommand\Authfont{\fontsize{12}{14.4}\selectfont}
@@ -29,12 +30,14 @@
 % \renewcommand{\tablename}{TABLE}
 
 \title{\textbf{
+    QED theory of electron beam-induced electronic excitation
+    and its effect on sputtering cross-sections in 2D crystals
 %     QED theory of electronic excitation and sputtering rates in 2D crystals
 %     under\\electron irradiation
 %     QED theory of electron beam-induced excitation rates and
 %     sputtering cross-sections in 2D crystals
-    QED theory of electron beam-induced electronic excitation and
-    sputtering in 2D crystals
+%     QED theory of electron beam-induced electronic excitation and
+%     sputtering in 2D crystals
 }}
 \author[1,2*]{Anthony Yoshimura} 
 \author[2]{Michael Lamparski} 
@@ -123,20 +126,22 @@ the PKA's displacement threshold $E_d$.
 % which is usually comparable to its binding energy and on the order of several
 % eV.  Assuming the nucleus is initially at rest,
 This means that a displacement is possible only if the kinetic energy of the
-beam electron exceeds some critical energy $E_c$.
-% As the mass of the nucleus is much larger than that of the electron, $E_c$ is
-% always much greater than $E_d$.  In most ground state materials, the critical
-% energy is predicted to be anywhere from 10s to 100s of keV.
-Many computational models have been proposed to predict both $E_d$ and $E_c$ to
-calculate electron beam-induced sputtering rates in 2D crystals \cite{Meyer2012,
-Susi2016, Yoshimura2018, Susi2019}. However, the vast majority of current
+beam electron exceeds some critical energy $\epsilon_c$.
+% As the mass of the nucleus is much larger than that of the electron,
+% $\epsilon_c$ is always much greater than $E_d$.
+% In most ground state materials, the critical energy is predicted to be
+% anywhere from 10s to 100s of keV.
+Many computational models have been proposed to predict both $E_d$ and
+$\epsilon_c$ to calculate electron beam-induced sputtering rates in 2D crystals
+\cite{Meyer2012, Susi2016, Yoshimura2018, Susi2019}.
+However, the vast majority of current
 methods focus solely on interactions between the beam electrons and material
-nuclei, neglecting any coupling with the material’s electrons.  Thus, while
-present-day models give reasonable predictions for conductors \cite{Meyer2012},
-where electronic relaxation is rapid, they often vastly underestimate the
-atomic displacement rates in insulators.  For example, the critical energy for
-sputtering boron or nitrogen from hexagonal boron nitride (hBN) is predicted to
-be 80 keV \cite{Kotakoski2010}.
+nuclei, neglecting any coupling with the material’s electrons.
+Thus, while present-day models give reasonable predictions for conductors
+\cite{Meyer2012}, where electronic relaxation is rapid, they often vastly
+underestimate the atomic displacement rates in insulators.
+For example, the critical energy for sputtering boron or nitrogen from
+hexagonal boron nitride (hBN) is predicted to be 80 keV \cite{Kotakoski2010}.
 However, sputtering has been observed in hBN under 30 keV irradiation
 \cite{Cretu2015}.
 Furthermore, selenium sputters from WSe$_2$ and MoSe$_2$ under irradiation
@@ -160,7 +165,7 @@ Lehnert et al.  have proposed that the consideration of inelastic scattering,
 i.e., beam-induced electronic excitation, can lead to such a reduction in the
 displacement threshold \cite{Lehnert2017}.
 This would increase the sputtering cross-section for all beam energies and
-enable sputtering for energies well-below the ground state $E_c$.
+enable sputtering for energies well-below the ground state $\epsilon_c$.
 
 % Task: what we have done to address the need?
 To account for these effects, we combine quantum electrodynamics (QED) and
@@ -256,8 +261,9 @@ energy transfer resulting from a direct collision, and the step function
 $\theta$ enforces that the cross-section is zero when $E_\text{max} < E_d$.
 We will leave the step function implicit going forward for the sake of
 compactness.
-The critical energy $E_c$ is then the beam energy for which $E_\text{max}=E_d$.
-Therefore, the observation of sputtering at energies well below $E_c$ is
+The critical energy $\epsilon_c$ is then the beam energy for which
+$E_\text{max}=E_d$.
+Therefore, the observation of sputtering at energies well below $\epsilon_c$ is
 completely at odds with equation (\ref{eq:basicSigma}).
 With this in mind, a fair amount of work has been done to treat deviations from
 equation (\ref{eq:basicSigma}).
@@ -269,7 +275,7 @@ thermal motion of the nucleus increases the cross-section.
 However, these techniques essentially amount to smearing the beam energy
 dependence of the cross-section, so that the cross-section only strays
 significantly from equation (\ref{eq:basicSigma}) for beam energies very close
-to $E_c$.
+to $\epsilon_c$.
 Thus, temperature-induced increases in the cross-section cannot account for the
 disparities between the equation (\ref{eq:basicSigma}) model and
 experiment.
@@ -279,9 +285,9 @@ $E_d$.
 % As long as
 % Ultimately, if the only interaction considered is that between beam electron
 % and
-% material nuclei, $E_d$ and thus $E_c$ remain unchanged.
+% material nuclei, $E_d$ and thus $\epsilon_c$ remain unchanged.
 % As such that the cross-section for beam energies below the initially
-% calculated $E_c$ remain tiny.
+% calculated $\epsilon_c$ remain tiny.
 % It is therefore unlikely that any improvement to the description of
 % precollision motion will significantly reduce the disagreement between theory
 % and experiment.
@@ -345,8 +351,8 @@ processes mediated by these interactions.
 \noindent
 The sputtering cross-section can then be calculated by coupling $d\sigma/dE$ to
 $P_i$ and $P_f$ for all possible $n_i$ and $n_f$.
-With the terms defined above, this excitation-sensitive sputtering cross-
-section can be written as
+With the terms defined above, this excitation-sensitive sputtering
+cross-section can be written as
 
 \begin{equation}
   \begin{aligned}
@@ -375,13 +381,13 @@ section can be written as
 % Equation (\ref{eq:totSigma}) shows that the sputtering cross-section depends
 % on three distributions: $P_i$, $P_f$, and $d\sigma/dE$.
 If $P_i$ and $P_f$ are non-negligible when $n_i$ and $n_f$ are nonzero, and
-$E_d$ depends strongly on $n_f$, the interactions with the material electrons
+$E_d$ depends strongly on $n_f$, then interactions with the material electrons
 must be considered.
 % This leads to a non-negligible probability of nonzero $n_f$.
 % This is the case in insulators.
 We will later show that this makes $\sigma$ in equation (\ref{eq:totSigma})
 larger than $\sigma_0$ in equation (\ref{eq:basicSigma}) for all beam energies,
-most prominently when $\epsilon_b < E_c$.
+most prominently when $\epsilon_b < \epsilon_c$.
 
 The remainder of this paper focuses on the derivations of $P_i$, $P_f$, and
 $\{E_d\}$.
@@ -670,9 +676,9 @@ The normalization of 4-momentum states $\ket{p_n}$ in terms of
 %
 We can then discretize the momenta by replacing $d^3p_i/(2\pi)^3$ with $V^{-1}$
 and $d^2p_i^\perp/(2\pi)^2$ with $A^{-1}$, where $V$ and $A$ are the volume and
-cross-sectional area of the simulated crystal, i.e., the volume and cross-
-sectional area of the unit cell times the number of k-points used to sample the
-BZ.
+cross-sectional area of the simulated crystal, i.e., the volume and
+cross-sectional area of the unit cell times the number of k-points used to
+sample the BZ.
 With this, the amplitude for electron states $\ket{\phi_1}$ and $\ket{\phi_2}$
 to scatter into $\ket{\phi_3}$ and $\ket{\phi_4}$ takes the form
 
@@ -1557,7 +1563,7 @@ cross-sections of hBN and MoS$_2$.
 
 Electron beam irradiation has been shown to bore nanopores in monolayer hBN at
 beam energies far beneath the calculated ground state critical energy of
-$E_c\sim80$ keV \cite{Jin2009,Meyer2009,Kotakoski2010,Cretu2015}.
+$\epsilon_c\sim80$ keV \cite{Jin2009,Meyer2009,Kotakoski2010,Cretu2015}.
 In a pristine hBN layer, these beam-induced pores can be initialized from
 isolated boron and nitrogen vacancies.
 The atoms surrounding these vacancies have reduced coordination numbers, and
@@ -1677,7 +1683,7 @@ under electron irradiation.
 Kretschmer et al. measured the sputtering cross-section of sulfur from MoS$_2$
 for several beam energies ranging from 20 to 80 keV \cite{Kretschmer2020}.
 They found a peak in the cross-section at 30 keV, much less than the predicted
-ground state $E_c\sim 90$ keV \cite{Kretschmer2020}.
+ground state $\epsilon_c\sim 90$ keV \cite{Kretschmer2020}.
 To help explain this unexpected peak, we calculate the cross-section for sulfur
 sputtering from pristine MoS$_2$ (figure \ref{fig:MoS2Cross}).
 The vacant system free energy $E_v$ for the calculation of $\{E_d\}$ is that of a
@@ -1774,8 +1780,8 @@ sputtering cross-section are greater.
 
 We also plot the contributions of $n_f = 0$, 1, and 2 excitations to MoS$_2$'s
 sputtering cross-section separately.
-% Unlike figure \ref{fig:edgeCross}c, we do not sum over the cross-
-% sections of all excitation numbers $n_f$.
+% Unlike figure \ref{fig:edgeCross}c, we do not sum over the cross-sections of
+% all excitation numbers $n_f$.
 In doing so, we see that the contributions of $n_f = 1$ or 2 would conceal the
 peak at 30 keV. 
 Thus, it seems that the likelihoods of $n_f = 1$ or 2 are somehow suppressed.
