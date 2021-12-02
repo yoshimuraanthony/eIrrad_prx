@@ -36,9 +36,9 @@
 \title{\textbf{
     Supplemental Material: \\
     QED theory of electron beam-induced electronic excitation
-    and its effect on sputtering cross-section in 2D crystals
+    and its effect on sputtering cross section in 2D crystals
 %     QED theory of electron beam-induced \\ excitation rates and
-%     sputtering cross-sections in 2D crystals
+%     sputtering cross sections in 2D crystals
 }} 
 \author[1,2*]{Anthony Yoshimura} 
 \author[2]{Michael Lamparski} 
@@ -71,13 +71,13 @@ Polytechnic Institute, Troy, NY 12180, USA}
 \label{app:M}
 %------------------------------------------------------------------
 
-As the excitation amplitude in equation (\ref{eq:ampCode}) takes the invariant
-matrix element $\mathcal{M}$ and not $|\mathcal{M}|^2$, we are unable to use
-the spin sum identities typically used to derive many QED cross-sections
+As the excitation amplitude in equation (\ref{eq:ampCode}) contains the
+invariant matrix element $\mathcal{M}$ and not $|\mathcal{M}|^2$, we are unable
+to use the spin sum identities typically used to derive many QED cross sections
 \cite{Peskin1995, Lancaster2014}.
 % To this end, the Mathematica notebook included in the supplemental material
 % yields
-Nonetheless, the evaluation of the $\mathcal{M}$ in equation (\ref{eq:M}) is
+Nonetheless, the evaluation of $\mathcal{M}$ in equation (\ref{eq:M}) is
 straightforward, though a bit cumbersome.
 In the Dirac basis \cite{Bjorken1964},
 
@@ -241,17 +241,18 @@ The last equality implies that
 \label{app:p3z}
 %------------------------------------------------------------------------------
 
-Conservation of 4-momentum for free electrons allows us to write
+For the scattering of two free electrons, conservation of 4-momentum allows us
+to write
 
 \begin{equation}
     p_1 + p_2 = p_3 + p_4.
 \end{equation}
 %
-This means that of the six components needed to specify the 3-momenta of the
-two outgoing particles, only two are independent.
+This constrains four of the six components needed to specify the 3-momenta of the
+two outgoing particles, so that only two componenets are independent.
 We choose the independent components to be $p^x_3$ and $p^y_3$.  Thus, we wish
 to find $p^z_3$ as a function of $p_1$, $p_2$, $p^x_3$, and $p^y_3$.
-From this $p_4 = p_1 + p_2 - p_3$ is easily obtained, and we have all six
+From this, $p_4 = p_1 + p_2 - p_3$ is easily obtained, and we have all six
 components of outgoing 3-momenta needed to calculate the scattering amplitude
 from equation (\ref{eq:ampCode}).
 We start by setting the $z$-direction parallel to $\mathbf{p}_1$.
@@ -279,7 +280,7 @@ where
 \end{equation}
 %
 and $\epsilon_{n\mathbf{k}}$ and $\epsilon_{n'\mathbf{k'}}$ are the eigenvalues
-of the excited electron and hole states, respectively.
+of the excited hole and electron states, respectively.
 We can also write $\epsilon_1 = \gamma m$ where $\gamma=1/\sqrt{1-\beta^2}$ is
 the Lorentz factor corresponding to the beam electron's velocity $\beta$.
 Squaring the last line in (\ref{eq:conservation}) and subtracting $m^2$ then
@@ -356,21 +357,21 @@ smaller than that of the beam electron.
   \centering
   \includegraphics[width=\textwidth]{figS1.pdf}
   \caption{
-    Convergence of the sputtering cross-section with respect to the maximum
+    Convergence of the sputtering cross section with respect to the maximum
     number of beam-induced excitations $n_i^\text{max}$ considered.
     The simulated beam energies $\epsilon_b$ are the lowest experimental beam
     energies used for each material.
     The excitation lifetimes $\tau$ are those used to fit the experimental data
     in figures \ref{fig:edgeCross} and \ref{fig:MoS2Cross}.
-    Each cross-section is deemed converged when any increase in $n_i^\text{max}$
-    increases the cross-section by less than 1\%.
+    Each cross section is deemed converged when any increase in $n_i^\text{max}$
+    increases the cross section by less than 1\%.
   }
   \label{fig:nimax}
 \end{figure}
 
 %------------------------------------------------------------------------------
 \pagebreak
-\section{Peaks in the sputtering cross-section of hBN}
+\section{Peaks in the sputtering cross section of hBN}
 \label{app:edgePeaks}
 %------------------------------------------------------------------------------
 
@@ -378,7 +379,7 @@ smaller than that of the beam electron.
   \centering
   \includegraphics[width=0.6\textwidth]{figS2.pdf}
   \caption{
-    The sputtering cross-sections of boron and nitrogen from the hBN armchair
+    The sputtering cross sections of boron and nitrogen from the hBN armchair
     edge peak at beam energies much lower than those typically used for
     microscopy and defect engineering.
     However, as mentioned in the main text, the validity of our perturbative
@@ -510,7 +511,7 @@ In hBN, a unit cell contains a boron and nitrogen atom.
 As these atoms have similar masses and displacement thresholds (table
 \ref{tab:Ed}), the sputtering of both atoms should be considered for a given
 beam energy.
-Thus, we approximate the maximum cross-sectional area $\sigma_\text{max}$ of
+Thus, we approximate the maximum cross sectional area $\sigma_\text{max}$ of
 these atoms to be $\Omega_\text{hBN}/2$, where $\Omega_\text{hBN}$ is the area
 of the hBN unit cell.
 On the other hand, molybdenum is much heavier than sulfur and has a much larger
@@ -522,7 +523,7 @@ on the outgoing surface is eligible to sputter from a pristine system
 Therefore, $\sigma_\text{max}$ for sulfur sputtering from MoS$_2$ is
 $\Omega_\text{MoS$_2$}$, the area of the MoS$_2$ unit cell.
 
-To approximate $E_\text{min}$, we use the Rutherford displacement cross-section
+To approximate $E_\text{min}$, we use the Rutherford displacement cross section
 \cite{Thornton2004, Sakurai2011, Yoshimura2018} as an approximation to equation
 (\ref{eq:basicSigma}),
 
@@ -547,14 +548,14 @@ $E_\text{min}$ yields
   \label{eq:Emin}
 \end{equation}
 %
-Using the Rutherford cross-section instead of the McKinley-Feshbach
-cross-section should be accurate for small beam energies for which $\beta\ll
+Using the Rutherford cross section instead of the McKinley-Feshbach
+cross section should be accurate for small beam energies for which $\beta\ll
 1$.
 This makes it well-suited for finding $E_\text{min}$, since
 $E_d(n_f)<E_\text{min}$ only for large $n_f$, and large $n_i$ (and thus $n_f$)
 are much more likely for small beam energies (figure \ref{fig:Pi}).
 
-With that said, the sputtering cross-section is fairly insensitive to the exact
+With that said, the sputtering cross section is fairly insensitive to the exact
 value of $E_\text{min}$ when $E_\text{min} \ll E_\text{max}$.
 This is because the post-collision velocity of the PKA diminishes when the
 energy transfer $E$ shrinks.
@@ -565,7 +566,7 @@ equation (\ref{eq:totSigma}) are extremely tiny for $E$ near $E_\text{min}$.
 As a result, changes in $E_\text{min}$ are essentially immeasurable for beam
 energies greater than 1 keV.
 Nonetheless, the use of $E_\text{min}$ is necessary for the calculation of a
-finite sputtering cross-section.
+finite sputtering cross section.
 
 
 \bibliography{library}
@@ -792,7 +793,7 @@ finite sputtering cross-section.
 % \end{equation}
 % %
 % where $T$ is the time-ordering operator.  This operator is the key ingredient
-% for calculating scattering cross-sections, as it allows us to determine the
+% for calculating scattering cross sections, as it allows us to determine the
 % probability amplitude for the evolution of any state into another.
 % 
 % The amplitude density for two free electrons of momenta $p_1$ and $p_2$ to
