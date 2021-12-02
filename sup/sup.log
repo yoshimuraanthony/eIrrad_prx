@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.28)  2 DEC 2021 09:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.3.28)  2 DEC 2021 14:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1790,7 +1790,7 @@ Package pdftex.def Info: figS5.pdf used on input line 500.
 Here is how much of TeX's memory you used:
  11715 strings out of 493013
  209866 string characters out of 6119099
- 259314 words of memory out of 5000000
+ 259315 words of memory out of 5000000
  15134 multiletter control sequences out of 15000+600000
  62985 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1825,7 +1825,7 @@ s/texlive/toss_3_x86_64_ib/2016/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></c
 ollab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-dist/fonts/type1/pub
 lic/lm/lmsy5.pfb></collab/usr/global/tools/texlive/toss_3_x86_64_ib/2016/texmf-
 dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on sup.pdf (10 pages, 534672 bytes).
+Output written on sup.pdf (10 pages, 534680 bytes).
 PDF statistics:
  1422 PDF objects out of 1440 (max. 8388607)
  909 compressed objects within 10 object streams
