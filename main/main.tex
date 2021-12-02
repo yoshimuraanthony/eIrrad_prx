@@ -773,7 +773,8 @@ The initial beam state is highly localized on $\mathbf{p}_b$, meaning that
   \label{eq:phi_1}
     |\bra{\mathbf{p}_1}\ket{\mathbf{p}_b}|^2
     =
-    V\delta_{\mathbf{p}_1,\mathbf{p}_b} \quad\Rightarrow\quad
+    V\delta_{\mathbf{p}_1,\mathbf{p}_b}
+    \quad\Rightarrow\quad
     \bra{\mathbf{p}_1}\ket{\mathbf{p}_b}
     =
     V^{1/2}\delta_{\mathbf{p}_1,\mathbf{p}_b}.
@@ -787,30 +788,44 @@ plane-wave basis, so that
     &\ket{n\mathbf{k}}
     =
     V^{-1/2}\sum_{\mathbf{G}}
-    C_{\mathbf{G+k}}^n \ket{\mathbf{G+k}} \\& \ket{n'\mathbf{k'}}
+    C_{\mathbf{G+k}}^n \ket{\mathbf{G+k}}
+    \\& \ket{n'\mathbf{k'}}
     =
-    V^{-1/2}\sum_{\mathbf{G'}} C_{\mathbf{G'+k'}}^{n'} \ket{\mathbf{G'+k'}},
+    V^{-1/2}\sum_{\mathbf{G}} C_{\mathbf{G+k'}}^{n'} \ket{\mathbf{G+k'}},
   \end{aligned}
 \end{equation}
 %
-where $\mathbf{G}$ and $\mathbf{G'}$ are reciprocal lattice vectors.
-By re-expressing $\mathbf{p}_2$ and $\mathbf{p}_3$ as $\mathbf{G+k}$ and
-$\mathbf{G'+k'}$ respectively, we find
+where each $\mathbf{G}$ is a reciprocal lattice vector.
+%(RLV).
+% Going forward, we let $\mathbf{G}$'s denote RLVs, and $\mathbf{k}$'s denote
+% crystal momenta inside the first BZ.
+By re-expressing $\mathbf{p}_2$ and $\mathbf{p}_3$ as $\mathbf{G}_2+\mathbf{k}_2$ and
+$\mathbf{G}_3 + \mathbf{k}_3$ respectively, we find
 
 \begin{equation} 
   \label{eq:phi_2} 
   \begin{aligned}
-    &\bra{\mathbf{p}_2}\ket{\phi_2}
+    &\bra{\mathbf{p}_2}\ket{n\mathbf{k}}
     =
-    \bra{\mathbf{G + k}}\ket{n\mathbf{k}}
+    \bra{\mathbf{G}_2 + \mathbf{k}_2}
+    \left(
+        V^{-1/2}\sum_{\mathbf{G}}
+        C_{\mathbf{G+k}}^n \ket{\mathbf{G+k}}
+    \right)
     =
-    V^{1/2}C^n_\mathbf{G+k}
+    V^{1/2}C^n_{\mathbf{G}_2+\mathbf{k}}
+    \delta_{\mathbf{k}_2,\mathbf{k}}.
     \\&
-    \bra{\mathbf{p}_3}\ket{\phi_3}
+    \bra{\mathbf{p}_3}\ket{n'\mathbf{k'}}
     =
-    \bra{\mathbf{G' + k'}}\ket{n'\mathbf{k'}}
+    \bra{\mathbf{G}_3 + \mathbf{k}_3}
+    \left(
+        V^{-1/2}\sum_{\mathbf{G}}
+        C_{\mathbf{G+k'}}^{n'} \ket{\mathbf{G+k'}}
+    \right)
     =
-    V^{1/2}C^{n'}_\mathbf{G'+k'}.
+    V^{1/2}C^{n'}_{\mathbf{G}_3+\mathbf{k'}}
+    \delta_{\mathbf{k}_3,\mathbf{k'}}.
   \end{aligned}
 \end{equation}
 %
@@ -828,7 +843,7 @@ wish for $\ket{\mathbf{p}_b'}$ to satisfy
 %
 The excitation amplitude is then obtained by plugging in the bra-ket products from
 equations (\ref{eq:phi_1}), (\ref{eq:phi_2}), and (\ref{eq:phi_4}) into
-expression (\ref{eq:ampCrystal}). This gives us the excitation amplitude
+equation (\ref{eq:ampCrystal}). This gives us the excitation amplitude
 
 \begin{equation} 
   \begin{aligned}
@@ -836,7 +851,7 @@ expression (\ref{eq:ampCrystal}). This gives us the excitation amplitude
       \bra{\mathbf{p}_b', n'\mathbf{k'}} \hat{T} \ket{n\mathbf{k},\mathbf{p}_b}
       =
       \frac{1}{A}
-      \sum_{\mathbf{G'}^\perp} \sum_{\mathbf{G}}
+      \sum_{\mathbf{G}_3^\perp} \sum_{\mathbf{G}_2}
       \sqrt{\frac{ \epsilon_4\epsilon_3 }{ \epsilon_1\epsilon_2 }}
 %       \sqrt{\frac{
 %         \epsilon_b'\epsilon_{n'\mathbf{k'}}
@@ -845,14 +860,15 @@ expression (\ref{eq:ampCrystal}). This gives us the excitation amplitude
 %       }}
       \frac{\mathcal{M}(p_4p_3\leftarrow p_2p_1)}
       {4\left|p_3^z\epsilon_4 - p_4^z\epsilon_3\right|}
-      C_{\mathbf{G'+k'}}^{n'\ast} C_{\mathbf{G+k}}^{n},
+      C_{\mathbf{G}_3+\mathbf{k'}}^{n'\ast} C_{\mathbf{G}_2+\mathbf{k}}^{n},
 %     }
   \end{aligned}
   \label{eq:ampCode} 
 \end{equation}
 %
-where it is understood that $p_2 = (m + \epsilon_{n\mathbf{k}}, \mathbf{G+k})$ and
-$p_3 = (m + \epsilon_{n'\mathbf{k'}}, \mathbf{G'+k'})$,
+where it is understood that $p_2 = (m + \epsilon_{n\mathbf{k}},
+\mathbf{G}_2 + \mathbf{k})$ and
+$p_3 = (m + \epsilon_{n'\mathbf{k'}}, \mathbf{G}_3 + \mathbf{k'})$,
 % \begin{equation} \begin{aligned} p_2 &= (\epsilon_{n\mathbf{k}},
 % \mathbf{G+k}) \\ p_3 &= (\epsilon_{n'\mathbf{k'}}, \mathbf{G'+k'}),
 % \end{aligned} \end{equation}
@@ -897,7 +913,7 @@ the sum of all transition probabilities
 where $\mathbf{k}$ and $\mathbf{k'}$ run over all k-points, $n$ over
 the valence bands, and $n'$ over the conduction bands (those possessing states
 with energy between the Fermi level and the work function).
-The index in the right-most expression $j$ labels the possible single-particle
+The index $j$ in the right-most expression labels the possible single-particle
 excitations (e.g., $j=n'\mathbf{k'}\leftarrow n\mathbf{k}$).
 
 Combinatorics tells us that the probability of exciting exactly one excitation
@@ -993,9 +1009,10 @@ Thus, we see that the probability $P_i$ can be written purely in terms of $S$.
 
 We can now use formula (\ref{eq:Pi}) to calculate excitation probabilities in
 hBN and MoS$_2$ (figure \ref{fig:Pi}).
-DFT is used to obtain the plane-wave coefficients $C_{\mathbf{G+k}}^n$ and
-$C_{\mathbf{G'+k'}}^{n'}$ and eigenvalues $\epsilon_{n\mathbf{k}}$ and
-$\epsilon_{n'\mathbf{k'}}$ for the pristine unit cell of each material.
+DFT is used to obtain the plane-wave coefficients $C_{\mathbf{G}_2
++\mathbf{k}}^n$ and $C_{\mathbf{G}_3+\mathbf{k'}}^{n'}$ and eigenvalues
+$\epsilon_{n\mathbf{k}}$ and $\epsilon_{n'\mathbf{k'}}$ for the pristine unit
+cell of each material.
 These are plugged into equation (\ref{eq:ampCode}) to obtain the amplitude for
 each transition.
 We sum over the squares of all resulting amplitudes to obtain $S$, which is
@@ -1041,8 +1058,8 @@ making the summands in equation (\ref{eq:ampCode}) larger.
 
 With $P_i(\epsilon_b, n_i)$ derived in formula (\ref{eq:Pi}) and
 $d\sigma/dE(\epsilon_b, E)$ defined in equation (\ref{eq:MF}), we now have two
-of the three functions needed to calculate the sputtering cross-section in
-equation (\ref{eq:totSigma}).
+of the three functions depicted in figure \ref{fig:triad} needed to calculate
+the sputtering cross-section in equation (\ref{eq:totSigma}).
 The final ingredients are $P_f(E, \tau, n_i, n_f)$, the probability that $n_f$
 excitations survive the displacement event given $n_i$ initial beam-induced
 excitations, and $\{E_d\}$, the set of all displacement thresholds for all
@@ -1060,10 +1077,10 @@ electrons can induce electronic excitations in the material.
 % (\ref{eq:Pi}).
 In this section, we show how these excitations bring about much larger
 sputtering cross-sections than those predicted by a ground state theory.
-As part of this process, we start by showing how electronic excitations reduce
-the displacement threshold $E_d$.
-We then show that longer excitation lifetimes increase $P_f$, giving the
-beam-induced excitations more opportunities to lessen $E_d$.
+We start by showing how electronic excitations can reduce the displacement
+threshold $E_d$.
+We then show that longer excitation lifetimes increase $P_f$ for nonzero $n_f$,
+giving the beam-induced excitations more opportunities to lessen $E_d$.
 This motivates us to write the sputtering cross-section in equation
 (\ref{eq:totSigma}) analytically in terms of the excitation lifetime $\tau$.
 Finally, the resulting equation is used to predict the sputtering rates of
@@ -1279,10 +1296,10 @@ that the system traverses during sputtering.  For example, suppose the system
 emits one photon as it sputters.  $E_d$ is then the energy gained along the
 portion of the excited energy surface traversed before emission plus that
 gained along the relaxed surface after emission.
-This is how spontaneous emission can change $E_d$.
+This is how SE can change $E_d$.
 However, the effect of SE on $E_d$ must diminish as the PKA moves further away
 from the crystal.
-This means there must be some distance $d$ beyond which spontaneous emission no
+This means there must be some distance $d$ beyond which SE no
 longer affects the forces on the sputtered atom, leaving the energy surface
 unchanged.
 We take $d=4.5$ {\AA} in line with Kretschmer et al.'s study, though we
@@ -1317,8 +1334,8 @@ With this formalism, $E_d$ is simply the height of the step,
 
 Thus we have derived a simple relationship for how electronic excitations
 affect $E_d$.
-However, before we show how this relationship affects the sputtering cross-
-section, we must first point out an important caveat.
+However, before we show how this relationship affects the sputtering
+cross-section, we must first point out an important caveat.
 Equation (\ref{eq:Ed}) suggests that $E_d$ can be negative for large $n_f$.
 In these cases, the affected atom accelerates away from its pristine site even
 without energy transfer from the beam electron.
@@ -1349,7 +1366,7 @@ set of displacement thresholds $\{E_d\}$ to insert into equation
 
 All positive displacement thresholds computed for this work are listed in table
 \ref{tab:Ed}.
-Explainations for the calculations of $E_v$, $E_a$, $E_0(0)$, and $E_g$ are
+Explanations for the calculations of $E_v$, $E_a$, $E_0(0)$, and $E_g$ are
 given in subsctions \ref{sec:hBN} and \ref{sec:MoS2}.
 The three largest displacement thresholds for MoS$_2$ with $n_f = 0$, 1, and 2
 excitations are similar to those calculated with DFT-based molecular dynamics
@@ -1376,7 +1393,7 @@ materials with greater $S$ require greater $n_i^\text{max}$.
 In this work, we choose $n_i^\text{max}$ large enough so that including more
 excitations increases the sputtering cross-section by less than 1\% for the
 smallest experimental beam energy considered for each matieral (figure
-\ref{fig:nimax})
+\ref{fig:nimax}).
 
 Thus, we have shown how $E_d$ depends only on the number of surviving
 excitations $n_f$.  We must now determine the likelihood that $n_f$ excitations
@@ -1713,7 +1730,7 @@ In contrast, hBN's total cross-section has a minimum at around 40 keV and
 begins to increase as $\epsilon_b$ decreases.
 Eventually, hBN's sputtering cross-section peaks before dropping quickly to
 zero as the beam energy goes to zero (figure \ref{fig:edgePeaks}).
-However, this peak occurs at around 0.6 keV, far below the lower energy bound
+However, this peak occurs at around 0.5 keV, far below the lower energy bound
 of figure \ref{fig:edgeCross}c.
 These distinct cross-section behaviors can be explained by the amplified
 sensitivity of $n_f$ to $\tau$ at low beam energies.
@@ -1741,7 +1758,8 @@ pronounced in hBN than in MoS$_2$.
 Furthermore, the difference in the cross-section behavior is exacerbated by the
 fact that sulfur is heavier than both boron and nitrogen, so that its
 post-collision velocity is always smaller for a given energy transfer $E$.
-It follows that $t_s$ and thus $P_f$ are also smaller for a given $E$ in
+% It follows that $t_s$ and thus $P_f$ are also smaller for a given $E$ in
+It follows that $t_s$ is larger, and thus, $P_f$ is smaller for a given $E$ in
 MoS$_2$.
 This again increases the likelihood that hBN has more final excitations than
 MoS$_2$, meaning that the effects of beam-induced excitation on hBN's
