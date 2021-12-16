@@ -53,10 +53,10 @@
 ((E3 + m)(p2y + Ip2z) - (E2 + m)(p3y - Ip3z))
 (-(E4 + m)(p1y + Ip1z) + (E1 + m)(p4y - Ip4z))
 
-# Cancel parts of third and fourth therms
+# Cancel parts of third and fourth terms (most simplified)
 -
-(((E3 + m)p2x + (E2 + m)p3x)
-((E4 + m)p1x + (E1 + m)p4x))
+((E3 + m)p2x + (E2 + m)p3x)
+((E4 + m)p1x + (E1 + m)p4x)
 +
 ((E2 + m)(E3 + m) + p2xp3x + (p2y + Ip2z)(p3y - Ip3z))
 ((E1 + m)(E4 + m) + p1xp4x + (p1y + Ip1z)(p4y - Ip4z))
@@ -68,6 +68,12 @@
 (E1 + m)(p4y - Ip4z)
 
 # bring second term to the front and expand
+(p2y + Ip2z)(p3y - Ip3z)(p1y + Ip1z)(p4y - Ip4z)
++
+p2xp3xp1xp4x
++
+(E2 + m)(E3 + m)(E1 + m)(E4 + m)
++
 (E2 + m)(E3 + m)(p1y + Ip1z)(p4y - Ip4z)
 +
 (E1 + m)(E4 + m)(p2y + Ip2z)(p3y - Ip3z)
@@ -92,6 +98,9 @@ p1xp4x(p2y + Ip2z)(p3y - Ip3z)
 (E1 + m)(p4y - Ip4z)
 
 # Reorder all terms to facilitate comparison (1 -> 4)(x -> z)
++
+(E1 + m)(E2 + m)(E3 + m)(E4 + m)
++
 (E1 + m)(E4 + m)(p2y + Ip2z)(p3y - Ip3z)
 +
 (E2 + m)(E3 + m)(p1y + Ip1z)(p4y - Ip4z)
@@ -100,9 +109,13 @@ p1xp4x(p2y + Ip2z)(p3y - Ip3z)
 +
 (E2 + m)(E3 + m)p1xp4x
 +
+p1xp2xp3xp4x
++
 p1xp4x(p2y + Ip2z)(p3y - Ip3z)
 +
 p2xp3x(p1y + Ip1z)(p4y - Ip4z)
++
+(p1y + Ip1z)(p2y + Ip2z)(p3y - Ip3z)(p4y - Ip4z)
 -
 ((E3 + m)p2x + (E2 + m)p3x)
 ((E1 + m)p4x + (E4 + m)p1x)
@@ -111,7 +124,10 @@ p2xp3x(p1y + Ip1z)(p4y - Ip4z)
 -
 2(E1 + m)(E3 + m)(p2y + Ip2z)(p4y - Ip4z)
 
-# expand seventh term
+# expand tenth term
++
+(E1 + m)(E2 + m)(E3 + m)(E4 + m)
++
 (E1 + m)(E4 + m)(p2y + Ip2z)(p3y - Ip3z)
 +
 (E2 + m)(E3 + m)(p1y + Ip1z)(p4y - Ip4z)
@@ -120,9 +136,13 @@ p2xp3x(p1y + Ip1z)(p4y - Ip4z)
 +
 (E2 + m)(E3 + m)p1xp4x
 +
+p1xp2xp3xp4x
++
 p1xp4x(p2y + Ip2z)(p3y - Ip3z)
 +
 p2xp3x(p1y + Ip1z)(p4y - Ip4z)
++
+(p1y + Ip1z)(p2y + Ip2z)(p3y - Ip3z)(p4y - Ip4z)
 -
 (E1 + m)(E2 + m)p3xp4x
 -
@@ -136,7 +156,10 @@ p2xp3x(p1y + Ip1z)(p4y - Ip4z)
 -
 2(E1 + m)(E3 + m)(p2y + Ip2z)(p4y - Ip4z)
 
-# reorder (group)
+# reorder (group) (correct according to test.py)
+# should try to factor later
++
+(E1 + m)(E2 + m)(E3 + m)(E4 + m)
 -
 2(E1 + m)(E3 + m)(p2y + Ip2z)(p4y - Ip4z)
 +
@@ -158,10 +181,55 @@ p2xp3x(p1y + Ip1z)(p4y - Ip4z)
 -
 (E3 + m)(E4 + m)p1xp2x
 +
+p1xp2xp3xp4x
++
 p1xp4x(p2y + Ip2z)(p3y - Ip3z)
 +
 p2xp3x(p1y + Ip1z)(p4y - Ip4z)
++
+(p1y + Ip1z)(p2y + Ip2z)(p3y - Ip3z)(p4y - Ip4z)
 
+# p1x = p1y = 0
+-
+2(E1 + m)(E3 + m)(p2y + Ip2z)(p4y - Ip4z)
++
+(E1 + m)(E4 + m)(p2y + Ip2z)(p3y - Ip3z)
++
+(E2 + m)(E3 + m)(Ip1z)(p4y - Ip4z)
+-
+2(E2 + m)(E4 + m)(Ip1z)(p3y - Ip3z)
++
+(E1 + m)(E2 + m)(E3 + m)(E4 + m)
+-
+(E1 + m)(E2 + m)p3xp4x
+-
+(E1 + m)(E3 + m)p2xp4x
++
+(E1 + m)(E4 + m)p2xp3x
++
+p2xp3x(Ip1z)(p4y - Ip4z)
++
+(Ip1z)(p2y + Ip2z)(p3y - Ip3z)(p4y - Ip4z)
 
-
+# all terms O(gamma)
+-
+2(E1 + m)(E3 + m)(p2y + Ip2z)(p4y - Ip4z)
++
+(E1 + m)(E4 + m)(p2y + Ip2z)(p3y - Ip3z)
++
+(E2 + m)(E3 + m)(Ip1z)(p4y - Ip4z)
+-
+2(E2 + m)(E4 + m)(Ip1z)(p3y - Ip3z)
++
+(E1 + m)(E2 + m)(E3 + m)(E4 + m)
+-
+(E1 + m)(E2 + m)p3xp4x
+-
+(E1 + m)(E3 + m)p2xp4x
++
+(E1 + m)(E4 + m)p2xp3x
++
+p2xp3x(Ip1z)(p4y - Ip4z)
++
+(Ip1z)(p2y + Ip2z)(p3y - Ip3z)(p4y - Ip4z)
 
