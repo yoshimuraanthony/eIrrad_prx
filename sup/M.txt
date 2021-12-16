@@ -1,0 +1,167 @@
+(2*(-(((E3 + m)*p2x + (E2 + m)*p3x)*((E4 + m)*p1x + (E1 + m)*p4x)) + ((E2 + m)*(E3 + m) + p2x*p3x + (p2y + I*p2z)*(p3y - I*p3z))*((E1 + m)*(E4 + m) + p1x*p4x + (p1y + I*p1z)*(p4y - I*p4z)) - (m*p2y + E3*(p2y + I*p2z) + I*m*p2z + E2*p3y + m*p3y - I*(E2 + m)*p3z)*(m*p1y + E4*(p1y + I*p1z) + I*m*p1z + E1*p4y + m*p4y - I*(E1 + m)*p4z) - (E3*((-I)*p2y + p2z) + E2*(I*p3y + p3z) + m*((-I)*p2y + p2z + I*p3y + p3z))*(E4*((-I)*p1y + p1z) + E1*(I*p4y + p4z) + m*((-I)*p1y + p1z + I*p4y + p4z))))/(Sqrt[E1 + m]*Sqrt[E2 + m]*Sqrt[E3 + m]*Sqrt[E4 + m])
+
+# remove 2 and Sqrt[] terms and reformat for 80 chars per line
+-
+(((E3 + m)*p2x + (E2 + m)*p3x)*((E4 + m)*p1x + (E1 + m)*p4x))
++
+((E2 + m)*(E3 + m) + p2x*p3x + (p2y + I*p2z)*(p3y - I*p3z))
+((E1 + m)*(E4 + m) + p1x*p4x + (p1y + I*p1z)*(p4y - I*p4z))
+-
+(m*p2y + E3*(p2y + I*p2z) + I*m*p2z + E2*p3y + m*p3y - I*(E2 + m)*p3z)
+(m*p1y + E4*(p1y + I*p1z) + I*m*p1z + E1*p4y + m*p4y - I*(E1 + m)*p4z)
+-
+(E3*((-I)*p2y + p2z) + E2*(I*p3y + p3z) + m*((-I)*p2y + p2z + I*p3y + p3z))
+(E4*((-I)*p1y + p1z) + E1*(I*p4y + p4z) + m*((-I)*p1y + p1z + I*p4y + p4z))
+
+# remove *'s and unnecessary ('s
+-
+(((E3 + m)p2x + (E2 + m)p3x)((E4 + m)p1x + (E1 + m)p4x))
++
+((E2 + m)(E3 + m) + p2xp3x + (p2y + Ip2z)(p3y - Ip3z))
+((E1 + m)(E4 + m) + p1xp4x + (p1y + Ip1z)(p4y - Ip4z))
+-
+(mp2y + E3(p2y + Ip2z) + Imp2z + E2p3y + mp3y - I(E2 + m)p3z)
+(mp1y + E4(p1y + Ip1z) + Imp1z + E1p4y + mp4y - I(E1 + m)p4z)
+-
+(E3(-Ip2y + p2z) + E2(Ip3y + p3z) + m(-Ip2y + p2z + Ip3y + p3z))
+(E4(-Ip1y + p1z) + E1(Ip4y + p4z) + m(-Ip1y + p1z + Ip4y + p4z))
+
+# group Ei+m wherever possible
+-
+(((E3 + m)p2x + (E2 + m)p3x)((E4 + m)p1x + (E1 + m)p4x))
++
+((E2 + m)(E3 + m) + p2xp3x + (p2y + Ip2z)(p3y - Ip3z))
+((E1 + m)(E4 + m) + p1xp4x + (p1y + Ip1z)(p4y - Ip4z))
+-
+((E3 + m)(p2y + Ip2z) + (E2 + m)(p3y - Ip3z))
+((E4 + m)(p1y + Ip1z) + (E1 + m)(p4y - Ip4z))
+-
+((E3 + m)(-Ip2y + p2z) + (E2 + m)(Ip3y + p3z))
+((E4 + m)(-Ip1y + p1z) + (E1 + m)(Ip4y + p4z))
+
+# multiply and divide fourth term by I to more easily compare to third term
+-
+(((E3 + m)p2x + (E2 + m)p3x)
+((E4 + m)p1x + (E1 + m)p4x))
++
+((E2 + m)(E3 + m) + p2xp3x + (p2y + Ip2z)(p3y - Ip3z))
+((E1 + m)(E4 + m) + p1xp4x + (p1y + Ip1z)(p4y - Ip4z))
+-
+((E3 + m)(p2y + Ip2z) + (E2 + m)(p3y - Ip3z))
+((E4 + m)(p1y + Ip1z) + (E1 + m)(p4y - Ip4z))
+-
+((E3 + m)(p2y + Ip2z) - (E2 + m)(p3y - Ip3z))
+(-(E4 + m)(p1y + Ip1z) + (E1 + m)(p4y - Ip4z))
+
+# Cancel parts of third and fourth therms
+-
+(((E3 + m)p2x + (E2 + m)p3x)
+((E4 + m)p1x + (E1 + m)p4x))
++
+((E2 + m)(E3 + m) + p2xp3x + (p2y + Ip2z)(p3y - Ip3z))
+((E1 + m)(E4 + m) + p1xp4x + (p1y + Ip1z)(p4y - Ip4z))
+-
+2(E2 + m)(p3y - Ip3z)
+(E4 + m)(p1y + Ip1z)
+-
+2(E3 + m)(p2y + Ip2z)
+(E1 + m)(p4y - Ip4z)
+
+# bring second term to the front and expand
+(E2 + m)(E3 + m)(p1y + Ip1z)(p4y - Ip4z)
++
+(E1 + m)(E4 + m)(p2y + Ip2z)(p3y - Ip3z)
++
+(E2 + m)(E3 + m)p1xp4x
++
+(E1 + m)(E4 + m)p2xp3x
++
+p2xp3x(p1y + Ip1z)(p4y - Ip4z)
++
+p1xp4x(p2y + Ip2z)(p3y - Ip3z)
+-
+((E3 + m)p2x + (E2 + m)p3x)
+((E4 + m)p1x + (E1 + m)p4x)
+-
+2
+(E2 + m)(p3y - Ip3z)
+(E4 + m)(p1y + Ip1z)
+-
+2
+(E3 + m)(p2y + Ip2z)
+(E1 + m)(p4y - Ip4z)
+
+# Reorder all terms to facilitate comparison (1 -> 4)(x -> z)
+(E1 + m)(E4 + m)(p2y + Ip2z)(p3y - Ip3z)
++
+(E2 + m)(E3 + m)(p1y + Ip1z)(p4y - Ip4z)
++
+(E1 + m)(E4 + m)p2xp3x
++
+(E2 + m)(E3 + m)p1xp4x
++
+p1xp4x(p2y + Ip2z)(p3y - Ip3z)
++
+p2xp3x(p1y + Ip1z)(p4y - Ip4z)
+-
+((E3 + m)p2x + (E2 + m)p3x)
+((E1 + m)p4x + (E4 + m)p1x)
+-
+2(E2 + m)(E4 + m)(p1y + Ip1z)(p3y - Ip3z)
+-
+2(E1 + m)(E3 + m)(p2y + Ip2z)(p4y - Ip4z)
+
+# expand seventh term
+(E1 + m)(E4 + m)(p2y + Ip2z)(p3y - Ip3z)
++
+(E2 + m)(E3 + m)(p1y + Ip1z)(p4y - Ip4z)
++
+(E1 + m)(E4 + m)p2xp3x
++
+(E2 + m)(E3 + m)p1xp4x
++
+p1xp4x(p2y + Ip2z)(p3y - Ip3z)
++
+p2xp3x(p1y + Ip1z)(p4y - Ip4z)
+-
+(E1 + m)(E2 + m)p3xp4x
+-
+(E1 + m)(E3 + m)p2xp4x
+-
+(E2 + m) (E4 + m)p1xp3x
+-
+(E3 + m)(E4 + m)p1xp2x
+-
+2(E2 + m)(E4 + m)(p1y + Ip1z)(p3y - Ip3z)
+-
+2(E1 + m)(E3 + m)(p2y + Ip2z)(p4y - Ip4z)
+
+# reorder (group)
+-
+2(E1 + m)(E3 + m)(p2y + Ip2z)(p4y - Ip4z)
++
+(E1 + m)(E4 + m)(p2y + Ip2z)(p3y - Ip3z)
++
+(E2 + m)(E3 + m)(p1y + Ip1z)(p4y - Ip4z)
+-
+2(E2 + m)(E4 + m)(p1y + Ip1z)(p3y - Ip3z)
+-
+(E1 + m)(E2 + m)p3xp4x
+-
+(E1 + m)(E3 + m)p2xp4x
++
+(E1 + m)(E4 + m)p2xp3x
++
+(E2 + m)(E3 + m)p1xp4x
+-
+(E2 + m)(E4 + m)p1xp3x
+-
+(E3 + m)(E4 + m)p1xp2x
++
+p1xp4x(p2y + Ip2z)(p3y - Ip3z)
++
+p2xp3x(p1y + Ip1z)(p4y - Ip4z)
+
+
+
+
