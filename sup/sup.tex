@@ -157,7 +157,7 @@ contribution to $\mathcal{M}$ and multiply the result by 2.  That is,
 %
 Substituting equations (\ref{eq:diracBasis}) through (\ref{eq:bar}) into
 (\ref{eq:t}) yields $\mathcal{M}$ in terms of the components of the electrons'
-4-momenta.
+4-momenta.  That is,
 
 \begin{equation}
 \begin{aligned}
@@ -181,10 +181,12 @@ Substituting equations (\ref{eq:diracBasis}) through (\ref{eq:bar}) into
     \big[(\epsilon_3 + m)(-ip^y_2 + p^z_2) + (\epsilon_2 + m)(ip^y_3 + p^z_3)\big]
         \\&\qquad\qquad\times
     \big[(\epsilon_4 + m)p^z_1 + (\epsilon_1 + m)(ip^y_4 + p^z_4)\big]
-\Big\}.
+\Big\},
 \end{aligned}
 \end{equation}
 %
+where we let $p_1$ denote the momentum of the beam electron so that $p_1^x =
+p_1^y = 0$.
 See the Mathematica \cite{Mathematica} notebook in the supplemental material
 for more details.
 
@@ -305,10 +307,12 @@ equations in (\ref{eq:conservation}) tells us that
 %   p^z_1p^z_2 - p^x_2p^x_3 - p^y_2p^y_3 - (p^z_1 + p^z_2)p^z_3
   p^z_1p^z_2 - \mathbf{p}^{\perp}_2 \cdot \mathbf{p}^{\perp}_3 
     - (p^z_1 + p^z_2)p^z_3
-  \right].
+  \right],
   \label{eq:p42}
 \end{equation}
 %
+where the $\perp$ superscript denotes the projection perpendicular to
+$\hat{z}$.
 Subtracting equation (\ref{eq:p42}) from equation (\ref{eq:p41}) then yields
 
 \begin{equation}
