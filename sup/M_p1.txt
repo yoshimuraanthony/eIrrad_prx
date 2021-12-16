@@ -67,6 +67,17 @@
 2(E3 + m)(p2y + Ip2z)
 (E1 + m)(p4y - Ip4z)
 
+# p1x = p1y = 0
++
+((E2 + m)(E3 + m) + p2xp3x + (p2y + Ip2z)(p3y - Ip3z))
+((E1 + m)(E4 + m) + Ip1z(p4y - Ip4z))
+-
+(E1 + m)p4x((E3 + m)p2x + (E2 + m)p3x)
+-
+2(E2 + m)(E4 + m)Ip1z(p3y - Ip3z)
+-
+2(E1 + m)(E3 + m)(p2y + Ip2z)(p4y - Ip4z)
+
 # bring second term to the front and expand
 (p2y + Ip2z)(p3y - Ip3z)(p1y + Ip1z)(p4y - Ip4z)
 +

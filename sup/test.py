@@ -54,18 +54,15 @@ def getOld(E1=m):
 
 def getNew(E1=m):
     return \
-    - \
-    ((E3 + m)*p2x + (E2 + m)*p3x) \
-    *((E4 + m)*p1x + (E1 + m)*p4x) \
     + \
     ((E2 + m)*(E3 + m) + p2x*p3x + (p2y + I*p2z)*(p3y - I*p3z)) \
-    *((E1 + m)*(E4 + m) + p1x*p4x + (p1y + I*p1z)*(p4y - I*p4z)) \
+    * ((E1 + m)*(E4 + m) + I*p1z*(p4y - I*p4z)) \
     - \
-    2*(E2 + m)*(p3y - I*p3z) \
-    *(E4 + m)*(p1y + I*p1z) \
+    (E1 + m)*p4x*((E3 + m)*p2x + (E2 + m)*p3x) \
     - \
-    2*(E3 + m)*(p2y + I*p2z) \
-    *(E1 + m)*(p4y - I*p4z) \
+    2*(E2 + m)*(E4 + m)*I*p1z*(p3y - I*p3z) \
+    - \
+    2*(E1 + m)*(E3 + m)*(p2y + I*p2z)*(p4y - I*p4z)
 
 def getCode(E1=m):
     return \

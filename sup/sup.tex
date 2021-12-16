@@ -164,23 +164,20 @@ Substituting equations (\ref{eq:diracBasis}) through (\ref{eq:bar}) into
 \mathcal{M}(p_4p_3\leftarrow p_2p_1)
 &\sim
 -\frac{2e^2}{(p_3 - p_2)^2}
-\\&\times
+% \\&\times
 \big[(\epsilon_1 + m)(\epsilon_2 + m)(\epsilon_3 + m)(\epsilon_4 + m)\big]^{-1/2}
 \\&\times\Big\{
-    (\epsilon_1 + m)\big[(\epsilon_3 + m)p^x_2 + (\epsilon_2 + m) p^x_3\big]p^x_4
-    \\&\qquad+
-    \big[(\epsilon_3 + m)(p^y_2 + ip^z_2) + (\epsilon_2 + m)(p^y_3 - ip^z_3)\big]
-        \\&\qquad\qquad\times
-        \big[i(\epsilon_4 + m)p^z_1 + (\epsilon_1 + m)(p^y_4 - ip^z_4)\big]
-    \\&\qquad-
-    \big[(\epsilon_2 + m)(\epsilon_3 + m) + p^x_2p^x_3
-        + (p^y_2 + ip^z_2)( p^y_3 - ip^z_3)\big]
-        \\&\qquad\qquad\times
-        \big[(\epsilon_1 + m) (\epsilon_4 + m) + p^z_1(ip^y_4 + p^z_4)\big] 
-    \\&\qquad+
-    \big[(\epsilon_3 + m)(-ip^y_2 + p^z_2) + (\epsilon_2 + m)(ip^y_3 + p^z_3)\big]
-        \\&\qquad\qquad\times
-    \big[(\epsilon_4 + m)p^z_1 + (\epsilon_1 + m)(ip^y_4 + p^z_4)\big]
+  (\epsilon_1 + m)p_4^x\big[(\epsilon_3 + m)p_2^x
+    + (\epsilon_2 + m)p_3^x\big]
+  \\&\qquad+
+  2(\epsilon_1 + m)(\epsilon_3 + m)(p_2^y + ip_2^z)(p_4^y - ip_4^z)
+  \\&\qquad+
+  2(\epsilon_2 + m)(\epsilon_4 + m)ip_1^z(p_3^y - ip_3^z)
+  \\&\qquad-
+  \big[(\epsilon_2 + m)(\epsilon_3 + m) + p_2^xp_3^x
+      + (p_2^y + ip_2^z)(p_3^y - ip_3^z)\big]
+  \\&\qquad\qquad\times
+  \big[(\epsilon_1 + m)(\epsilon_4 + m) + ip_1^z(p_4^y - ip_4^z)\big]
 \Big\},
 \end{aligned}
 \end{equation}
@@ -1057,3 +1054,18 @@ finite sputtering cross section.
 % %
 % where $\eta \ll 1$ is a positive real number.  We drop the infinitesimal in
 % section \ref{sec:ee} since $q^2$ is always nonzero.
+
+%     (\epsilon_1 + m)\big[(\epsilon_3 + m)p^x_2 + (\epsilon_2 + m) p^x_3\big]p^x_4
+%     \\&\qquad+
+%     \big[(\epsilon_3 + m)(p^y_2 + ip^z_2) + (\epsilon_2 + m)(p^y_3 - ip^z_3)\big]
+%         \\&\qquad\qquad\times
+%         \big[i(\epsilon_4 + m)p^z_1 + (\epsilon_1 + m)(p^y_4 - ip^z_4)\big]
+%     \\&\qquad-
+%     \big[(\epsilon_2 + m)(\epsilon_3 + m) + p^x_2p^x_3
+%         + (p^y_2 + ip^z_2)( p^y_3 - ip^z_3)\big]
+%         \\&\qquad\qquad\times
+%         \big[(\epsilon_1 + m) (\epsilon_4 + m) + p^z_1(ip^y_4 + p^z_4)\big] 
+%     \\&\qquad+
+%     \big[(\epsilon_3 + m)(-ip^y_2 + p^z_2) + (\epsilon_2 + m)(ip^y_3 + p^z_3)\big]
+%         \\&\qquad\qquad\times
+%     \big[(\epsilon_4 + m)p^z_1 + (\epsilon_1 + m)(ip^y_4 + p^z_4)\big]
