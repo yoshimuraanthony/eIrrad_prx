@@ -79,6 +79,31 @@ def getCode(E1=m):
     *(E4*p1z + E1*(1j*p4y + p4z)\
     +m*(p1z + 1j*p4y + p4z))
 
+#     # original code
+#     (E1 + m)*((E3 + m)*p2x + (E2 + m)*p3x)*p4x\
+#     +(m*p2y + E3*(p2y + 1j*p2z) + 1j*m*p2z\
+#         +E2*p3y + m*p3y - 1j*(E2 + m)*p3z)\
+#     *(1j*E4*p1z + 1j*m*p1z + E1*p4y\
+#         +m*p4y - 1j*(E1 + m)*p4z)\
+#     -((E2 + m)*(E3 + m) + p2x*p3x\
+#         +(p2y + 1j*p2z)*(p3y - 1j*p3z))\
+#     *((E1 + m)*(E4 + m) + p1z*(1j*p4y + p4z))\
+#     +(E3*((-1j)*p2y + p2z) + E2*(1j*p3y + p3z)\
+#         +m*((-1j)*p2y + p2z + 1j*p3y + p3z))\
+#     *(E4*p1z + E1*(1j*p4y + p4z)\
+#     +m*(p1z + 1j*p4y + p4z))
+
+#     # most compact
+#     + \
+#     ((E2 + m)*(E3 + m) + p2x*p3x + (p2y + I*p2z)*(p3y - I*p3z)) \
+#     * ((E1 + m)*(E4 + m) + I*p1z*(p4y - I*p4z)) \
+#     - \
+#     (E1 + m)*p4x*((E3 + m)*p2x + (E2 + m)*p3x) \
+#     - \
+#     2*(E2 + m)*(E4 + m)*I*p1z*(p3y - I*p3z) \
+#     - \
+#     2*(E1 + m)*(E3 + m)*(p2y + I*p2z)*(p4y - I*p4z)
+
 #     - \
 #     (((E3 + m)*p2x + (E2 + m)*p3x) \
 #     *((E4 + m)*p1x + (E1 + m)*p4x)) \
